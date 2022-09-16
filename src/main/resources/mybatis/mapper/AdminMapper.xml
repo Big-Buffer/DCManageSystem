@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.dcmanagesystem.mapper.AdminMapper">
+    <insert id="insertAdmin" parameterType="com.example.dcmanagesystem.bean.Admin">
+        insert into normal.admin(username, password, authority) values(#{username}, #{password}, #{authority})
+    </insert>
+    <select id="queryAdminByUsername" parameterType="String" resultType="com.example.dcmanagesystem.bean.Admin">
+        select * from normal.admin where username=#{username}
+    </select>
+    <update id="updateAdminByUsername" parameterType="com.example.dcmanagesystem.bean.Admin">
+        update normal.admin set password=#{password},authority=#{authority} where username=#{username}
+    </update>
+    <delete id="deleteAdminByUsername" parameterType="String">
+        delete from normal.admin where username=#{username}
+    </delete>
+</mapper>

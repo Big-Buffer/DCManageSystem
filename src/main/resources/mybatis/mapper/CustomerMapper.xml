@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.dcmanagesystem.mapper.CustomerMapper">
+    <insert id="insertCustomer" parameterType="com.example.dcmanagesystem.bean.Customer">
+        insert into normal.customer(id_,customer_name,area,industry,status,violate_num,recover_num,outside_level)
+        values (#{id_},#{customer_name},#{area},#{industry},#{status},#{violate_num},#{recover_num},#{outside_level})
+    </insert>
+    <select id="queryAllCustomers" resultType="com.example.dcmanagesystem.bean.Customer">
+        select * from normal.customer
+    </select>
+    <select id="queryCustomerById" parameterType="Integer" resultType="com.example.dcmanagesystem.bean.Customer">
+        select * from normal.customer where id_=#{id_}
+    </select>
+    <select id="queryCustomerByName" parameterType="String" resultType="com.example.dcmanagesystem.bean.Customer">
+        select * from normal.customer where customer_name = #{customer_name}
+    </select>
+    <update id="updateCustomer" parameterType="com.example.dcmanagesystem.bean.Customer">
+        update normal.customer set customer_name=#{customer_name}, area=#{area}, industry=#{industry}
+                                                     , status=#{status} , violate_num=#{violate_num}
+                                                     , recover_num=#{recover_num} , outside_level=#{outside_level}
+        where id_=#{id_}
+    </update>
+    <delete id="deleteCustomerById" parameterType="Integer">
+        delete from normal.customer where id_=#{id_}
+    </delete>
+    <select id="queryCustomerByLevel" parameterType="Integer" resultType="com.example.dcmanagesystem.bean.Customer">
+        select * from normal.customer where outside_level=#{outside_level}
+    </select>
+</mapper>

@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: com.example.dcmanagesystem.DcManageSystemApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.997 s <<< FAILURE! - in com.example.dcmanagesystem.DcManageSystemApplicationTests
+contextLoads  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Requested bean is currently in creation: Is there an unresolvable circular reference?
+Caused by: org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Requested bean is currently in creation: Is there an unresolvable circular reference?
+

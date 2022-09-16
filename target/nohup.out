@@ -1,0 +1,219 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.1)
+
+2022-07-04 22:28:33.506  INFO 25994 --- [           main] c.e.d.DcManageSystemApplication          : Starting DcManageSystemApplication v0.0.1-SNAPSHOT using Java 11 on izwz92v9xcjopg9x3byvv8z with PID 25994 (/opt/DCManageSystem/DCManageSystem-0.0.1-SNAPSHOT.jar started by root in /opt/DCManageSystem)
+2022-07-04 22:28:33.541  INFO 25994 --- [           main] c.e.d.DcManageSystemApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-07-04 22:28:37.111  INFO 25994 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-04 22:28:37.137  INFO 25994 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-04 22:28:37.137  INFO 25994 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-04 22:28:37.316  INFO 25994 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-04 22:28:37.317  INFO 25994 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3558 ms
+2022-07-04 22:28:39.411  INFO 25994 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-04 22:28:39.439  INFO 25994 --- [           main] c.e.d.DcManageSystemApplication          : Started DcManageSystemApplication in 7.387 seconds (JVM running for 8.526)
+2022-07-04 22:29:26.409  INFO 25994 --- [p-nio-80-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [Hm_lvt_e8002ef3d9e0d8274b5b74cc4a027d08=1648436291,1648706454,1648710931,1648785179;] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-07-04 22:29:26.428  INFO 25994 --- [p-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-04 22:29:26.429  INFO 25994 --- [p-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-04 22:29:26.433  INFO 25994 --- [p-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-07-04 22:29:26.690  INFO 25994 --- [p-nio-80-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-04 22:29:27.546  INFO 25994 --- [p-nio-80-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-04 22:30:21.818  WARN 25994 --- [-nio-80-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.String` from Object value (token `JsonToken.START_OBJECT`); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.lang.String` from Object value (token `JsonToken.START_OBJECT`)<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 33] (through reference chain: com.example.dcmanagesystem.vo.InsertViolateApplyVO["violateReason"])]
+2022-07-04 22:31:02.019  WARN 25994 --- [p-nio-80-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.String` from Object value (token `JsonToken.START_OBJECT`); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.lang.String` from Object value (token `JsonToken.START_OBJECT`)<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 33] (through reference chain: com.example.dcmanagesystem.vo.InsertViolateApplyVO["violateReason"])]
+2022-07-04 22:32:37.163  WARN 25994 --- [p-nio-80-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-07-04 22:33:21.988  WARN 25994 --- [p-nio-80-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-07-04 22:39:10.899  WARN 25994 --- [p-nio-80-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.String` from Object value (token `JsonToken.START_OBJECT`); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.lang.String` from Object value (token `JsonToken.START_OBJECT`)<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 33] (through reference chain: com.example.dcmanagesystem.vo.InsertViolateApplyVO["violateReason"])]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.1)
+
+2022-07-04 22:55:17.833  INFO 26198 --- [           main] c.e.d.DcManageSystemApplication          : Starting DcManageSystemApplication v0.0.1-SNAPSHOT using Java 11 on izwz92v9xcjopg9x3byvv8z with PID 26198 (/opt/DCManageSystem/DCManageSystem-0.0.1-SNAPSHOT.jar started by root in /opt/DCManageSystem)
+2022-07-04 22:55:17.878  INFO 26198 --- [           main] c.e.d.DcManageSystemApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-07-04 22:55:21.371  INFO 26198 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-04 22:55:21.396  INFO 26198 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-04 22:55:21.397  INFO 26198 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-04 22:55:21.589  INFO 26198 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-04 22:55:21.589  INFO 26198 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3444 ms
+2022-07-04 22:55:23.725  INFO 26198 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-04 22:55:23.763  INFO 26198 --- [           main] c.e.d.DcManageSystemApplication          : Started DcManageSystemApplication in 7.725 seconds (JVM running for 8.818)
+2022-07-04 22:55:29.832  INFO 26198 --- [p-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-04 22:55:29.833  INFO 26198 --- [p-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-04 22:55:29.837  INFO 26198 --- [p-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-07-04 22:55:30.231  INFO 26198 --- [p-nio-80-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-04 22:55:30.908  INFO 26198 --- [p-nio-80-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-04 22:57:06.784  INFO 26198 --- [p-nio-80-exec-3] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [Hm_lvt_e8002ef3d9e0d8274b5b74cc4a027d08=1648436291,1648706454,1648710931,1648785179;] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-07-04 23:24:24.649  WARN 26198 --- [p-nio-80-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.String` from Object value (token `JsonToken.START_OBJECT`); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.lang.String` from Object value (token `JsonToken.START_OBJECT`)<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 33] (through reference chain: com.example.dcmanagesystem.vo.InsertViolateApplyVO["violateReason"])]
+2022-07-04 23:24:37.063  WARN 26198 --- [p-nio-80-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.String` from Object value (token `JsonToken.START_OBJECT`); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.lang.String` from Object value (token `JsonToken.START_OBJECT`)<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 33] (through reference chain: com.example.dcmanagesystem.vo.InsertViolateApplyVO["violateReason"])]
+2022-07-04 23:25:21.942  WARN 26198 --- [p-nio-80-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.String` from Object value (token `JsonToken.START_OBJECT`); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.lang.String` from Object value (token `JsonToken.START_OBJECT`)<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 33] (through reference chain: com.example.dcmanagesystem.vo.InsertViolateApplyVO["violateReason"])]
+2022-07-05 00:13:57.846  INFO 26198 --- [p-nio-80-exec-3] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x01H0x010x000x01D0x030x030x8bE0xaf0xaaJ0xc30x900x1a0xc00x1d5/0x170xb4F0x090x96r0xcb0x99mEO0x9d20x8a:!0xc20xf05\ ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419) ~[tomcat-embed-core-9.0.64.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271) ~[tomcat-embed-core-9.0.64.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.64.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.64.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787) ~[tomcat-embed-core-9.0.64.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.64.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.64.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.64.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.64.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.1)
+
+2022-07-05 08:22:45.429  INFO 29859 --- [           main] c.e.d.DcManageSystemApplication          : Starting DcManageSystemApplication v0.0.1-SNAPSHOT using Java 11 on izwz92v9xcjopg9x3byvv8z with PID 29859 (/opt/DCManageSystem/DCManageSystem-0.0.1-SNAPSHOT.jar started by root in /opt/DCManageSystem)
+2022-07-05 08:22:45.435  INFO 29859 --- [           main] c.e.d.DcManageSystemApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-07-05 08:22:48.601  INFO 29859 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-05 08:22:48.629  INFO 29859 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-05 08:22:48.630  INFO 29859 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-05 08:22:48.786  INFO 29859 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-05 08:22:48.786  INFO 29859 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3086 ms
+2022-07-05 08:22:51.234  INFO 29859 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-05 08:22:51.256  INFO 29859 --- [           main] c.e.d.DcManageSystemApplication          : Started DcManageSystemApplication in 7.42 seconds (JVM running for 8.651)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.1)
+
+2022-07-05 08:32:43.570  INFO 29975 --- [           main] c.e.d.DcManageSystemApplication          : Starting DcManageSystemApplication v0.0.1-SNAPSHOT using Java 11 on izwz92v9xcjopg9x3byvv8z with PID 29975 (/opt/DCManageSystem/DCManageSystem-0.0.1-SNAPSHOT.jar started by root in /opt/DCManageSystem)
+2022-07-05 08:32:43.577  INFO 29975 --- [           main] c.e.d.DcManageSystemApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-07-05 08:32:47.107  INFO 29975 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-05 08:32:47.136  INFO 29975 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-05 08:32:47.137  INFO 29975 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-05 08:32:47.277  INFO 29975 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-05 08:32:47.277  INFO 29975 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3411 ms
+2022-07-05 08:32:49.365  INFO 29975 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-05 08:32:49.392  INFO 29975 --- [           main] c.e.d.DcManageSystemApplication          : Started DcManageSystemApplication in 7.391 seconds (JVM running for 8.552)
+2022-07-05 08:36:21.741  INFO 29975 --- [p-nio-80-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [Hm_lvt_e8002ef3d9e0d8274b5b74cc4a027d08=1648436291,1648706454,1648710931,1648785179;] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-07-05 08:36:21.754  INFO 29975 --- [p-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-05 08:36:21.754  INFO 29975 --- [p-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-05 08:36:21.756  INFO 29975 --- [p-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-05 08:36:22.081  INFO 29975 --- [p-nio-80-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-05 08:36:22.871  INFO 29975 --- [p-nio-80-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-05 08:43:19.009  INFO 29975 --- [-nio-80-exec-10] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x000xca0x010x000x000xc60x030x030xccIh0x91l0x7f0x13n0xce0xd30xbe0xad0xb0g"0xb7I@TOvP0xfd0x9b0xb1@0xcf0xba0xa6C0xd1D0x000x00h0xcc0x140xcc0x130xc0/0xc0+0xc000xc0,0xc00x110xc00x070xc0'0xc0#0xc00x130xc00x090xc0(0xc0$0xc00x140xc00x0a0xcc0x150x000x9e0x000x9f0x00g0x00k0x0030x0090x000x9c0x000x9d0x000x050x000x040x00<0x00=0x00/0x0050xc00x120x000x160x000x0a0x000x030x000x080x000x060x000x140x000x110x000x190x000x170x0020xc00x080x000x120x000x130x000x150x0080x00@0x00f0x00j0x000xa20x000xa30x010x000x0050x000x050x000x050x010x000x000x000x000x000x0a0x000x080x000x060x000x170x000x180x000x190x000x0b0x000x020x010x000x000x0d0x000x0c0x000x0a0x040x010x040x030x020x010x020x030x020x020xff0x010x000x010x000x000x0f0x000x010x01...]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419) ~[tomcat-embed-core-9.0.64.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271) ~[tomcat-embed-core-9.0.64.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.64.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.64.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787) ~[tomcat-embed-core-9.0.64.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.64.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.64.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.64.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.64.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.1)
+
+2022-07-05 09:09:51.478  INFO 30302 --- [           main] c.e.d.DcManageSystemApplication          : Starting DcManageSystemApplication v0.0.1-SNAPSHOT using Java 11 on izwz92v9xcjopg9x3byvv8z with PID 30302 (/opt/DCManageSystem/DCManageSystem-0.0.1-SNAPSHOT.jar started by root in /opt/DCManageSystem)
+2022-07-05 09:09:51.501  INFO 30302 --- [           main] c.e.d.DcManageSystemApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-07-05 09:09:54.785  INFO 30302 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-05 09:09:54.811  INFO 30302 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-05 09:09:54.812  INFO 30302 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-05 09:09:55.018  INFO 30302 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-05 09:09:55.019  INFO 30302 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3253 ms
+2022-07-05 09:09:57.160  INFO 30302 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-05 09:09:57.183  INFO 30302 --- [           main] c.e.d.DcManageSystemApplication          : Started DcManageSystemApplication in 7.396 seconds (JVM running for 8.48)
+2022-07-05 09:11:10.037  INFO 30302 --- [p-nio-80-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-05 09:11:10.038  INFO 30302 --- [p-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-05 09:11:10.041  INFO 30302 --- [p-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-07-05 09:11:10.333  INFO 30302 --- [p-nio-80-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-05 09:11:11.186  INFO 30302 --- [p-nio-80-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.1)
+
+2022-07-05 09:13:12.671  INFO 30381 --- [           main] c.e.d.DcManageSystemApplication          : Starting DcManageSystemApplication v0.0.1-SNAPSHOT using Java 11 on izwz92v9xcjopg9x3byvv8z with PID 30381 (/opt/DCManageSystem/DCManageSystem-0.0.1-SNAPSHOT.jar started by root in /opt/DCManageSystem)
+2022-07-05 09:13:12.678  INFO 30381 --- [           main] c.e.d.DcManageSystemApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-07-05 09:13:16.339  INFO 30381 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-05 09:13:16.366  INFO 30381 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-05 09:13:16.367  INFO 30381 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-05 09:13:16.568  INFO 30381 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-05 09:13:16.568  INFO 30381 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3611 ms
+2022-07-05 09:13:18.572  INFO 30381 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-05 09:13:18.612  INFO 30381 --- [           main] c.e.d.DcManageSystemApplication          : Started DcManageSystemApplication in 7.869 seconds (JVM running for 9.077)
+2022-07-05 09:13:20.155  INFO 30381 --- [p-nio-80-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [Hm_lvt_e8002ef3d9e0d8274b5b74cc4a027d08=1648436291,1648706454,1648710931,1648785179;] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-07-05 09:13:20.171  INFO 30381 --- [p-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-05 09:13:20.171  INFO 30381 --- [p-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-05 09:13:20.174  INFO 30381 --- [p-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-07-05 09:13:20.677  INFO 30381 --- [p-nio-80-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-05 09:13:21.517  INFO 30381 --- [p-nio-80-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.1)
+
+2022-07-05 09:19:39.536  INFO 30473 --- [           main] c.e.d.DcManageSystemApplication          : Starting DcManageSystemApplication v0.0.1-SNAPSHOT using Java 11 on izwz92v9xcjopg9x3byvv8z with PID 30473 (/opt/DCManageSystem/DCManageSystem-0.0.1-SNAPSHOT.jar started by root in /opt/DCManageSystem)
+2022-07-05 09:19:39.544  INFO 30473 --- [           main] c.e.d.DcManageSystemApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-07-05 09:19:43.074  INFO 30473 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-05 09:19:43.111  INFO 30473 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-05 09:19:43.112  INFO 30473 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-05 09:19:43.288  INFO 30473 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-05 09:19:43.288  INFO 30473 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3529 ms
+2022-07-05 09:19:45.807  INFO 30473 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-05 09:19:45.852  INFO 30473 --- [           main] c.e.d.DcManageSystemApplication          : Started DcManageSystemApplication in 7.844 seconds (JVM running for 8.946)
+2022-07-05 09:20:06.626  INFO 30473 --- [p-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-05 09:20:06.627  INFO 30473 --- [p-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-05 09:20:06.630  INFO 30473 --- [p-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-07-05 09:20:06.894  INFO 30473 --- [p-nio-80-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-05 09:20:07.688  INFO 30473 --- [p-nio-80-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-05 09:22:43.878  INFO 30473 --- [p-nio-80-exec-4] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [Hm_lvt_e8002ef3d9e0d8274b5b74cc4a027d08=1648436291,1648706454,1648710931,1648785179;] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-07-05 09:30:39.860  INFO 30473 --- [p-nio-80-exec-9] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [MGLNDD_120.25.125.218_800x0a...]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419) ~[tomcat-embed-core-9.0.64.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271) ~[tomcat-embed-core-9.0.64.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.64.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.64.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787) ~[tomcat-embed-core-9.0.64.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.64.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.64.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.64.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.64.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+

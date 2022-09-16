@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.dcmanagesystem.mapper.RecoverCheckMapper">
+    <insert id="insertRecoverCheck" parameterType="com.example.dcmanagesystem.bean.RecoverCheck">
+        insert into normal.recover_check(violate_id,customer_id,recover_reason,apply_date,apply_person,certificate_date,certificate_person)
+        values(#{violate_id},#{customer_id},#{recover_reason},#{apply_date},#{apply_person},#{certificate_date},#{certificate_person})
+    </insert>
+    <select id="queryAllRecoverCheck" resultType="com.example.dcmanagesystem.bean.RecoverCheck">
+        select * from normal.recover_check
+    </select>
+    <select id="queryRecoverCheckById" parameterType="Integer" resultType="com.example.dcmanagesystem.bean.RecoverCheck">
+        select * from normal.recover_check where violate_id=#{violate_id}
+    </select>
+    <update id="updateRecoverCheck" parameterType="com.example.dcmanagesystem.bean.RecoverCheck">
+        update normal.recover_check set customer_id=#{customer_id},recover_reason=#{recover_reason},
+                                        apply_date=#{apply_date},apply_person=#{apply_person},certificate_date=#{certificate_date},
+                                        certificate_person=#{certificate_person}
+        where violate_id=#{violate_id}
+    </update>
+    <delete id="deleteRecoverCheckById" parameterType="Integer">
+        delete from normal.recover_check where violate_id=#{violate_id}
+    </delete>
+
+</mapper>
